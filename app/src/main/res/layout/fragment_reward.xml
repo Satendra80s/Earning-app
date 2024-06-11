@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true"
+    tools:context=".Fragments.RewardFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/background"
+            app:cardBackgroundColor="@color/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/amazonlogo"
+                    android:layout_width="78dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@drawable/amazon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtAmazon"
+                    android:layout_width="133dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Amazon Gift
+"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/amazonlogo"
+                    app:layout_constraintTop_toTopOf="@+id/amazonlogo"
+                    app:layout_constraintVertical_bias="0.044" />
+
+                <ImageView
+                    android:id="@+id/imgCoinAmazon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    app:layout_constraintStart_toStartOf="@+id/txtAmazon"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAmazon" />
+
+                <TextView
+                    android:id="@+id/needCoinAmazon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCoinAmazon"
+                    app:layout_constraintStart_toEndOf="@+id/imgCoinAmazon"
+                    app:layout_constraintTop_toTopOf="@+id/imgCoinAmazon"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/needTextAmazon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="coins need to redeem !"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/needCoinAmazon"
+                    app:layout_constraintStart_toEndOf="@+id/needCoinAmazon"
+                    app:layout_constraintTop_toTopOf="@+id/needCoinAmazon" />
+
+                <ProgressBar
+                    android:id="@+id/amozonProg"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:progressDrawable="@drawable/custom_progress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/AmazonRedeem"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtAmazon"
+                    app:layout_constraintTop_toBottomOf="@+id/needTextAmazon"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/AmazonRedeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_transcation"
+                    android:text="REDEEM"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/amazonlogo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            app:cardBackgroundColor="@color/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/googleplaylogo"
+                    android:layout_width="78dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@drawable/googleplay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/txtGooglePlay"
+                    android:layout_width="133dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Google Play"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/googleplaylogo"
+                    app:layout_constraintTop_toTopOf="@+id/googleplaylogo"
+                    app:layout_constraintVertical_bias="0.044" />
+
+                <ImageView
+                    android:id="@+id/imgCoinGoogle"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    app:layout_constraintStart_toStartOf="@+id/txtGooglePlay"
+                    app:layout_constraintTop_toBottomOf="@+id/txtGooglePlay" />
+
+                <TextView
+                    android:id="@+id/needCoinGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCoinGoogle"
+                    app:layout_constraintStart_toEndOf="@+id/imgCoinGoogle"
+                    app:layout_constraintTop_toTopOf="@+id/imgCoinGoogle"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/needTextGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="coins need to redeem !"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/needCoinGoogle"
+                    app:layout_constraintStart_toEndOf="@+id/needCoinGoogle"
+                    app:layout_constraintTop_toTopOf="@+id/needCoinGoogle" />
+
+                <ProgressBar
+                    android:id="@+id/googleProg"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:progressDrawable="@drawable/custom_progress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/GooglePlayRedeem"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtGooglePlay"
+                    app:layout_constraintTop_toBottomOf="@+id/needTextGoogle"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/GooglePlayRedeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_transcation"
+                    android:text="REDEEM"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/googleplaylogo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            app:cardBackgroundColor="@color/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/paypallogo"
+                    android:layout_width="78dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@drawable/paypal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/txtPayPal"
+                    android:layout_width="133dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:text="PayPal"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/paypallogo"
+                    app:layout_constraintTop_toTopOf="@+id/paypallogo"
+                    app:layout_constraintVertical_bias="0.044" />
+
+                <ImageView
+                    android:id="@+id/imgCoinPaypal"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    app:layout_constraintStart_toStartOf="@+id/txtPayPal"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPayPal" />
+
+                <TextView
+                    android:id="@+id/needCoinPaypal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCoinPaypal"
+                    app:layout_constraintStart_toEndOf="@+id/imgCoinPaypal"
+                    app:layout_constraintTop_toTopOf="@+id/imgCoinPaypal"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/needTextPaypal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="coins need to redeem !"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/needCoinPaypal"
+                    app:layout_constraintStart_toEndOf="@+id/needCoinPaypal"
+                    app:layout_constraintTop_toTopOf="@+id/needCoinPaypal" />
+
+                <ProgressBar
+                    android:id="@+id/payPalProg"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:progressDrawable="@drawable/custom_progress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/PayPalRedeem"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtPayPal"
+                    app:layout_constraintTop_toBottomOf="@+id/needTextPaypal"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/PayPalRedeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_transcation"
+                    android:text="REDEEM"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/paypallogo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="111dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="36dp"
+            android:text="Rewards"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/background"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="401dp"
+                android:layout_height="181dp">
+
+                <TextView
+                    android:id="@+id/currentCoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="999"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView22"
+                    app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/coin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Minimum Payment"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/imageView22"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="375dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:progressDrawable="@drawable/custom_progress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/coin"
+                    app:layout_constraintBottom_toBottomOf="@+id/currentcoin2"
+                    app:layout_constraintEnd_toStartOf="@+id/currentcoin2"
+                    app:layout_constraintTop_toTopOf="@+id/currentcoin2" />
+
+                <TextView
+                    android:id="@+id/currentcoin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="900"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/progressBar"
+                    app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/btn_transcation"
+                    android:text="Transcation  History"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/background"
+            app:cardBackgroundColor="@color/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/paytemlogo"
+                    android:layout_width="78dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@drawable/paytm"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtPaytem"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Paytem"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/paytemlogo"
+                    app:layout_constraintTop_toTopOf="@+id/paytemlogo"
+                    app:layout_constraintVertical_bias="0.044" />
+
+                <ImageView
+                    android:id="@+id/imgCoinPaytem"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    app:layout_constraintStart_toStartOf="@+id/txtPaytem"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPaytem" />
+
+                <TextView
+                    android:id="@+id/needCoinPaytm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCoinPaytem"
+                    app:layout_constraintStart_toEndOf="@+id/imgCoinPaytem"
+                    app:layout_constraintTop_toTopOf="@+id/imgCoinPaytem"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/needTextPaytm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="coins need to redeem !"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/needCoinPaytm"
+                    app:layout_constraintStart_toEndOf="@+id/needCoinPaytm"
+                    app:layout_constraintTop_toTopOf="@+id/needCoinPaytm" />
+
+                <ProgressBar
+                    android:id="@+id/paytemProg"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:progressDrawable="@drawable/custom_progress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/PaytemRedeem"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtPaytem"
+                    app:layout_constraintTop_toBottomOf="@+id/needTextPaytm"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/PaytemRedeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_transcation"
+                    android:text="REDEEM"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/paytemlogo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

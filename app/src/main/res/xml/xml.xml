@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        drawable="@drawable/ic_home"
+        text="@string/home" />
+
+    <tab
+        drawable="@drawable/rewardtol"
+        text="@string/reward" />
+
+    <tab
+        drawable="@drawable/profiletol"
+        text="@string/profile" />
+
+
+</tabs>
